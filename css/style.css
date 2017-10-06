@@ -155,7 +155,32 @@
     border-bottom: 1px solid #fff;
     display: inline-block;
 }
-
+.more-info{
+    background-color: #212226;
+    padding: 17px 12px;
+    margin-top: 29px;
+    display: flex;
+    justify-content: space-between;    
+}
+.more-info p{
+    opacity: .6;
+    font-size: 12px;
+}
+.more-info .more-info__title{
+    opacity: 1;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 12px;
+    text-align: center;
+}
+.more-info__block{
+    border-right: 1px solid rgba(255,255,255, .6);
+    padding: 0 8px;
+    width: 33.3333333333%;
+}
+.more-info__block:last-child{
+    border-right: none;
+}
 
 
 
@@ -176,6 +201,68 @@
 
 .hall-scheme-wrapper{
     border-bottom: 1px solid rgba(255,255,255, 0.4);
+}
+.hall-scheme{
+    color: #fff;
+}
+.SeatingLayout-screen{
+    text-align: center;
+    padding-top: 40px;
+    position: relative;
+}
+.SeatingLayout-screenText{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    top: 67px;
+    display: block;
+    position: absolute;
+    width: 100%;
+}
+.SeatingLayout-screen .icon {
+    display: block;
+    width: 900px;
+    margin: 0 auto;
+    height: 450px;
+    max-width: 100%;
+}
+.SeatingLayout-row{
+    display: flex;
+    align-items: center;
+}
+.RowNumber-left{
+    opacity: .6;
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 18px;
+}
+.RowNumber-right{
+    padding-left: 18px;
+}
+.Seat {
+    position: relative;
+    display: inline-block;
+    border: solid 1px #fff;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: 39px;
+    height: 26px;
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SeatNumber{
+    font-size: 16px;
+    font-weight: 700;
+}
+.Seat-notASeat{
+    opacity: 0;
+}
+.ml-31{
+    margin-left: 31px;
 }
 
 
