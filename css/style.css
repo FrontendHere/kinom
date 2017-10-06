@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(33, 34, 38, 0.7)
 }
 .BlurredBackground{
 	position: fixed;
@@ -204,6 +204,7 @@
 }
 .hall-scheme{
     color: #fff;
+    position: relative;
 }
 .SeatingLayout-screen{
     text-align: center;
@@ -228,18 +229,25 @@
     height: 450px;
     max-width: 100%;
 }
+.SeatingLayout-seats{
+    /*position: absolute; 
+    top: 126px;
+    width: 100%;*/
+    margin-top: -100px;  
+}
 .SeatingLayout-row{
     display: flex;
-    align-items: center;
+    align-items: center;    
+    padding-bottom: 21px;
 }
 .RowNumber-left{
     opacity: .6;
     font-size: 16px;
     font-weight: 700;
-    padding-right: 18px;
+    margin-right: auto;
 }
 .RowNumber-right{
-    padding-left: 18px;
+    margin-left: auto;
 }
 .Seat {
     position: relative;
@@ -253,6 +261,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s;
+}
+.Seat:hover{
+    border-color: #0056b3;
 }
 .SeatNumber{
     font-size: 16px;
