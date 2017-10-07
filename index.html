@@ -43,14 +43,14 @@
       </div>
       <div class="movie-title">
       	<div class="container">
-      		<div class="row">
-      			<div class="col col-lg-1">
+      		<div class="row d-block d-md-flex flex-md-row">
+      			<div class="col col-md-1 col-lg-1">
       				<div class="movie-avatar">
       					<img src="img/movie-avatar.png" alt="Movie avatar">
       				</div>
       			</div>
       			<div class="col col-lg-11">
-					<div class="movie-title__top">
+					<div class="movie-title__top text-center text-md-left">
       					<p class="movie-title__h1">
       						Босс-молокососс
       					</p>
@@ -69,7 +69,7 @@
       		</div>
       		<div class="row">
       			<div class="col">
-      				<div class="more-info">
+      				<div class="more-info flex-column flex-md-row">
       					<div class="more-info__block">
       						<p class="more-info__title">Для просмотра необходимы 3D очки</p>
       						<p>Для просмотра фильма в формате 3D требуются специальные очки (в стоимость билетов не включена стоимость очков). Вы можете приобрести индивидуальные многоразовые 3D-очки в кассе кинотеатра и бара или воспользоваться очками, купленными ранее.</p>
@@ -91,7 +91,11 @@
       	<div class="container">
       		<div class="row">
       			<div class="col">
+      			<div class="open-screen">
+			      	<img src="img/open-screen.png" height="26" width="26" alt="">
+			     </div>
 			      <div class="hall-scheme">
+			      	
 			      	<div class="SeatingLayout-screen">
 			      		<img src="img/screen.png">
 			      		<span class="SeatingLayout-screenText">Экран</span>			      		
@@ -563,19 +567,16 @@
 			      		</div>
 			      		<div class="SeatingLayout-row">
 			      			<div class="RowNumber RowNumber-left">9</div>
-			      			<div class="Seat Seat-notASeat">
-			      				<span class="SeatNumber">1</span>
-			      			</div>
 			      			<div class="Seat">
 			      				<span class="SeatNumber">1</span>
 			      			</div>
 			      			<div class="Seat">
 			      				<span class="SeatNumber">2</span>
 			      			</div>
-			      			<div class="Seat ml-31">
+			      			<div class="Seat">
 			      				<span class="SeatNumber">3</span>
 			      			</div>
-			      			<div class="Seat">
+			      			<div class="Seat ml-31">
 			      				<span class="SeatNumber">4</span>
 			      			</div>
 			      			<div class="Seat">
@@ -608,22 +609,60 @@
 			      			<div class="Seat">
 			      				<span class="SeatNumber">14</span>
 			      			</div>
-			      			<div class="Seat ml-31">
+			      			<div class="Seat">
 			      				<span class="SeatNumber">15</span>
 			      			</div>
-			      			<div class="Seat">
+			      			<div class="Seat ml-31">
 			      				<span class="SeatNumber">16</span>
 			      			</div>
-			      			<div class="Seat Seat-notASeat">
-			      				<span class="SeatNumber"></span>
+			      			<div class="Seat">
+			      				<span class="SeatNumber">17</span>
+			      			</div>
+			      			<div class="Seat">
+			      				<span class="SeatNumber">18</span>
 			      			</div>
 			      			<div class="RowNumber RowNumber-right">9</div>
+			      		</div>
+			      	</div>
+			      	<div class="SeatingLayout-key">
+			      		<div class="SeatingLayout-key__item">
+			      			<div class="Seat SeatingLayout-key__Seat"></div>
+			      			<span>Свободно</span>
+			      		</div>
+			      		<div class="SeatingLayout-key__item">
+			      			<div class="Seat SeatingLayout-key__Seat selected"></div>
+			      			<span>Выбрано</span>
+			      		</div>
+			      		<div class="SeatingLayout-key__item">
+			      			<div class="Seat SeatingLayout-key__Seat status-2"></div>
+			      			<span>Занято</span>
+			      		</div>
+			      		<div class="SeatingLayout-key__item">
+			      			<div class="Seat SeatingLayout-key__Seat type-disabledperson"></div>
+			      			<span>Места для инвалидов</span>
 			      		</div>
 			      	</div>		      	
 			      </div>
 			    </div>
 		    </div>
 		</div>
+	   </div>
+	   <div class="CheckoutFooter">
+	   	<div class="container">
+	   		<div class="row">
+	   			<div class="col">
+	   				<div class="CheckoutFooter__inner flex-column flex-md-row">
+	   					<div class="CheckoutFooter__seats">
+	   						<p>Ряд 6 Место 12</p>
+	   					</div>
+	   					<div class="CheckoutFooter__seats">
+	   						<p class="br-none">Ряд 6 Место 13</p>
+	   					</div>
+	   					<button class="CheckoutFooter__button">Продолжить</button>
+	   				</div>
+	   			</div>
+	   		</div>
+	   	</div>
 	   </div>
     </main>
 

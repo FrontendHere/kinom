@@ -32,8 +32,8 @@
     background-color: rgba(33, 34, 38, 0.7)
 }
 .BlurredBackground{
-	position: fixed;
-	background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
     top: 0;
     right: 0;
     bottom: 0;
@@ -41,7 +41,7 @@
     z-index: -2;
 }
 .BlurredBackground-backgroundImage{
-	position: absolute;
+    position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -51,15 +51,17 @@
     background-size: cover;
 }
 .CheckoutHeader{
-	height: 65px;
-	background-color: #212226;
-	border-bottom: 1px solid rgba(255,255,255, 0.4);
+    height: 65px;
+    background-color: #212226;
+    border-bottom: 1px solid rgba(255,255,255, 0.4);
     color: #fff;
 }
 .go-back-link{
-	color: #fff;
-	transition: all 0.3s;
-	text-decoration: none;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
     outline: none;
     font-size: 14px;
 }
@@ -73,10 +75,10 @@
     height: 20px;
 }
 .go-back-link:hover{
-	color: #00a8e1;
+    color: #00a8e1;
 }
 .go-back-link:hover i{
-	fill: #00a8e1;
+    fill: #00a8e1;
 }
 .CheckoutHeader-Title{
     font-family: 'Roboto', sans-serif;
@@ -84,6 +86,8 @@
     text-align: center;
 }
 .link-close{
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 .link-close i{
@@ -117,9 +121,15 @@
     width: 82px;
     height: 82px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     overflow: hidden;
 }
 .movie-avatar img{
@@ -159,8 +169,12 @@
     background-color: #212226;
     padding: 17px 12px;
     margin-top: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;    
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;    
 }
 .more-info p{
     opacity: .6;
@@ -180,6 +194,31 @@
 }
 .more-info__block:last-child{
     border-right: none;
+}
+@media (max-width: 991px){
+    .movie-title__info-spans{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .movie-title__info-spans > span {
+        padding: 2px 0;
+        border-right: none;
+    }    
+}
+@media (max-width: 767px){
+    .movie-avatar{
+        margin: 0 auto;
+    }
+    .more-info__block{
+            width: 100%;
+    border-right: none;
+    padding-bottom: 10px;
+    }
 }
 
 
@@ -205,6 +244,33 @@
 .hall-scheme{
     color: #fff;
     position: relative;
+}
+.open-screen{
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 56px;
+    height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    cursor: pointer;
+    z-index: 1;
+}
+.open-screen:hover{
+    background-color: #000;
+    border-color: #000;
 }
 .SeatingLayout-screen{
     text-align: center;
@@ -236,8 +302,12 @@
     margin-top: -100px;  
 }
 .SeatingLayout-row{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;    
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;    
     padding-bottom: 21px;
 }
 .RowNumber-left{
@@ -258,9 +328,17 @@
     width: 39px;
     height: 26px;
     margin-left: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s;
 }
 .Seat:hover{
@@ -276,6 +354,88 @@
 .ml-31{
     margin-left: 31px;
 }
+.SeatingLayout-key{
+    max-width: 525px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 38px;
+    padding-bottom: 37px;
+    color: #fff;
+}
+.SeatingLayout-key__item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.SeatingLayout-key__item span{
+    padding-left: 9px;
+    font-size: 12px;
+}
+.SeatingLayout-key__Seat{
+    width: 24px;
+    height: 14px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 0;
+}
+.SeatingLayout-key__Seat:hover{
+    border-color: #fff;
+}
+.SeatingLayout-key .type-disabledperson:before{
+    font-size: 10px;
+}
+@media (max-width: 991px){
+    .hall-scheme{
+        -webkit-transform: scale(.9);
+            -ms-transform: scale(.9);
+                transform: scale(.9);
+    }
+}
+@media (max-width: 767px){
+    .hall-scheme {
+        -webkit-transform: scale(.7);
+            -ms-transform: scale(.7);
+                transform: scale(.7);
+        margin-top: -91px;
+    }
+    .open-screen{
+        top: 10px;
+        width: 36px;
+        height: 36px;
+    }
+    .open-screen img{
+        max-width: 14px;
+        height: 14px;
+    }
+}
+@media (max-width: 575px){
+    .hall-scheme {
+        -webkit-transform: scale(.45);
+            -ms-transform: scale(.45);
+                transform: scale(.45);
+        margin-top: -136px;
+        margin-bottom: -142px;
+    }
+}
+@media (max-width: 400px){
+    .hall-scheme {
+        -webkit-transform: scale(.25);
+            -ms-transform: scale(.25);
+                transform: scale(.25);
+        margin-top: -237px;
+        margin-bottom: -200px;
+        margin-left: -40px;
+    }
+}
+
 
 
 /********************/
@@ -287,3 +447,86 @@
 /********************/
 /********************/
 /********************/
+
+.CheckoutFooter {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: 100%;
+    background-color: #212226;
+    padding-top: 43px;
+    padding-bottom: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.CheckoutFooter__inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.CheckoutFooter__seats{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.CheckoutFooter__seats p{
+    font-size: 16px;
+    font-weight: 500;
+    opacity: .6;
+    padding: 0 17px;
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+.CheckoutFooter__seats .br-none{
+    border-right: none;
+}
+.CheckoutFooter__button{
+    width: 225px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 11px;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    outline: none;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: transparent;
+}
+.CheckoutFooter__button:hover{
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+.CheckoutFooter__button:active,
+.CheckoutFooter__button:focus{
+    outline: none;
+}
+@media (max-width: 767px){
+    .CheckoutFooter__seats p{
+        padding: 0;
+        padding-bottom: 5px;
+        border-right: none;
+    }
+}
